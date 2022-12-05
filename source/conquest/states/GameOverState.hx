@@ -1,4 +1,4 @@
-package templatemg.states;
+package conquest.states;
 
 import flixel.FlxG;
 import flixel.FlxObject;

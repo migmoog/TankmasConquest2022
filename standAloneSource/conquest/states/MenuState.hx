@@ -1,4 +1,4 @@
-package templatemg.states;
+package conquest.states;
 
 import flixel.text.FlxText;
 
@@ -17,11 +17,7 @@ class MenuState extends flixel.FlxState
 		
 		final info = new FlxText();
 		info.alignment = CENTER;
-		info.text
-			= "This is the menu state.\n"
-			+ "This will only show in stand-alone mode.\n"
-			+ "In tankmas it will just start the game.\n"
-			+ "Press Z to play.";
+		info.text = "Made by michael moog";
 		Global.screenCenter(info);
 		add(info);
 	}
@@ -31,6 +27,6 @@ class MenuState extends flixel.FlxState
 		super.update(elapsed);
 		
 		if (Controls.justPressed.A)
-			Global.switchState(new templatemg.states.PlayState());
+			Global.switchState(new conquest.states.PlayState());
 	}
 }
